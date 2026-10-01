@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22DD01
+test_cases:
+- expected_values:
+    MX30_MILEAGE_ODO: 39919
+  response: 7E80662DD01009BEF
+- expected_values:
+    MX30_MILEAGE_ODO: 39922
+  response: 7E80662DD01009BF2
+- expected_values:
+    MX30_MILEAGE_ODO: 39939
+  response: 7E80662DD01009C03
+- expected_values:
+    MX30_MILEAGE_ODO: 40232
+  response: 7E80662DD01009D28

@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.220393
+test_cases:
+- expected_values:
+    MX30_AC_P: 82.38144
+  response: 7E805620393011C
+- expected_values:
+    MX30_AC_P: 295.29686
+  response: 7E80562039303FA
+- expected_values:
+    MX30_AC_P: 669.78432
+  response: '7E8056203930905'

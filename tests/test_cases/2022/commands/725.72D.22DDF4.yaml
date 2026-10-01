@@ -1,0 +1,14 @@
+command_id: 725.72D.22DDF4
+test_cases:
+- expected_values:
+    MX30_MOTOR_TRQ_EST: -78.2
+  response: 72D0562DDF4054F
+- expected_values:
+    MX30_MOTOR_TRQ_EST: 8
+  response: 72D0562DDF406FE
+- expected_values:
+    MX30_MOTOR_TRQ_EST: 8.6
+  response: 72D0562DDF40701
+- expected_values:
+    MX30_MOTOR_TRQ_EST: 129.2
+  response: 72D0562DDF4095C

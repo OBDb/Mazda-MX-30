@@ -1,0 +1,11 @@
+command_id: 760.768.222B11
+test_cases:
+- expected_values:
+    MX30_LAT_G_760: 0
+  response: 76805622B110000
+- expected_values:
+    MX30_LAT_G_760: -166
+  response: 76805622B11FF5A
+- expected_values:
+    MX30_LAT_G_760: -3
+  response: 76805622B11FFFD

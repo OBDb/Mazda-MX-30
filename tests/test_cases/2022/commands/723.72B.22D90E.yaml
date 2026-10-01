@@ -1,0 +1,8 @@
+command_id: 723.72B.22D90E
+test_cases:
+- expected_values:
+    MX30_12V_VOLTAGE: 14.2
+  response: 72B0562D90E058C
+- expected_values:
+    MX30_12V_VOLTAGE: 14.37
+  response: 72B0562D90E059D

@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22F431
+test_cases:
+- expected_values:
+    MX30_DIST_DTC_CLR: 135
+  response: 7E80562F4310087
+- expected_values:
+    MX30_DIST_DTC_CLR: 448
+  response: 7E80562F43101C0
+- expected_values:
+    MX30_DIST_DTC_CLR: 469
+  response: 7E80562F43101D5

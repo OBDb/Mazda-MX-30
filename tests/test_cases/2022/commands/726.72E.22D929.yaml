@@ -1,0 +1,8 @@
+command_id: 726.72E.22D929
+test_cases:
+- expected_values:
+    MX30_TT_RR: 3
+  response: 72E0462D92935
+- expected_values:
+    MX30_TT_RR: 18
+  response: 72E0462D92944
