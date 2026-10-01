@@ -1,0 +1,14 @@
+command_id: 723.72B.22DCE1
+test_cases:
+- expected_values:
+    MX30_IG_ON_TIMER: 0.23333
+  response: 72B0562DCE1000E
+- expected_values:
+    MX30_IG_ON_TIMER: 29.88333
+  response: 72B0562DCE10701
+- expected_values:
+    MX30_IG_ON_TIMER: 51.23333
+  response: 72B0562DCE10C02
+- expected_values:
+    MX30_IG_ON_TIMER: 55.45
+  response: 72B0562DCE10CFF

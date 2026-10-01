@@ -1,0 +1,11 @@
+command_id: 723.72B.22D914
+test_cases:
+- expected_values:
+    MX30_HV_EV_BATT_SOC: 58.5
+  response: 72B0562D9140249
+- expected_values:
+    MX30_HV_EV_BATT_SOC: 75.7
+  response: 72B0562D91402F5
+- expected_values:
+    MX30_HV_EV_BATT_SOC: 83.8
+  response: 72B0562D9140346

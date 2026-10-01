@@ -1,0 +1,11 @@
+command_id: 725.72D.22DDEF
+test_cases:
+- expected_values:
+    MX30_MOTOR_IAT: 10.125
+  response: 72D0562DDEF0051
+- expected_values:
+    MX30_MOTOR_IAT: 31.875
+  response: 72D0562DDEF00FF
+- expected_values:
+    MX30_MOTOR_IAT: 32
+  response: 72D0562DDEF0100

@@ -1,0 +1,8 @@
+command_id: 725.72D.22DDAF
+test_cases:
+- expected_values:
+    MX30_CAPACITOR_V: 351.875
+  response: 72D0562DDAF0AFF
+- expected_values:
+    MX30_CAPACITOR_V: 384.625
+  response: 72D0562DDAF0C05

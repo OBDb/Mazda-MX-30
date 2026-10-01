@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22F430
+test_cases:
+- expected_values:
+    MX30_WARMUP_CLR: 3
+  response: 7E80462F43003
+- expected_values:
+    MX30_WARMUP_CLR: 4
+  response: 7E80462F43004
+- expected_values:
+    MX30_WARMUP_CLR: 8
+  response: 7E80462F43008

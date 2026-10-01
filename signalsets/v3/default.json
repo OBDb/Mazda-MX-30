@@ -1,4 +1,318 @@
 { "commands": [
-
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "6180"}, "freq": 30,
+  "signals": [
+    {"id": "MX30_ODO_720", "path": "Trips", "fmt": { "len": 24, "max": 1677721, "div": 10, "unit": "kilometers" }, "name": "Odometer"}
+  ]},
+{ "hdr": "720", "rax": "728", "cmd": {"22": "61B1"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "61CC"}, "freq": 30,
+  "signals": [
+    {"id": "MX30_ODO_LAST_SERVICE_720", "path": "Trips",  "fmt": {           "len": 24, "max": 16777215,           "unit": "kilometers" }, "name": "Odometer at last service"},
+    {"id": "MX30_TOT_MONTHS_LAST",      "path": "Engine", "fmt": {"bix": 24, "len": 16, "max": 393210,   "mul": 6, "unit": "unknown"    }, "name": "Total months at last service"},
+    {"id": "MX30_TOT_ENG_RUNNING_TIME", "path": "Engine", "fmt": {"bix": 40, "len": 16, "max": 65535,              "unit": "unknown"    }, "name": "Total engine running time at last service"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "630E"}, "freq": 30,
+  "signals": [
+    {"id": "MX30_DIST_SINCE_SERVICE_720", "path": "Trips",  "fmt": {           "len": 16, "max": 65535,             "unit": "kilometers" }, "name": "Distance since last service"},
+    {"id": "MX30_MONTHS_SINCE_SERVICE",   "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 546,   "div": 120, "unit": "scalar"     }, "name": "Months since last service"},
+    {"id": "MX30_ENG_TIME_SINCE",         "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 65535,             "unit": "unknown"    }, "name": "Engine time since last service"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "D936"}, "freq": 30,
+  "signals": [
+    {"id": "MX30_TRIP_1", "path": "Engine", "fmt": {"bix": 24, "len": 16, "max": 6553, "div": 10, "unit": "kilometers" }, "name": "Trip 1"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "D937"}, "freq": 30,
+  "signals": [
+    {"id": "MX30_TRIP_2", "path": "Engine", "fmt": {"bix": 24, "len": 16, "max": 6553, "div": 10, "unit": "kilometers" }, "name": "Trip 2"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "DA10"}, "freq": 1,
+  "signals": [
+    {"id": "MX30_ACC_SETSPEED", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Adaptive cruise set speed"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "DA11"}, "freq": 1,
+  "signals": [
+    {"id": "MX30_ACC_TIMEGAP", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 128, "div": 2, "add": 0.5, "unit": "seconds" }, "name": "Adaptive cruise time gap"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "DA12"}, "freq": 1,
+  "signals": [
+    {"id": "MX30_ACC_TARGETVEHICLE", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Adaptive cruise target vehicle"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "DA18"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_TSI_SPD", "path": "Movement", "fmt": {"bix": 8, "len": 16, "max": 327675, "mul": 5, "unit": "kilometersPerHour" }, "name": "Traffic sign speed limit"}
+  ]},
+{ "hdr": "720", "rax": "728", "dbg": true, "cmd": {"22": "DD04"}, "freq": 5,
+  "signals": [
+    {"id": "MX30_CAR_T_720", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "In-car temperature"}
+  ]},
+{ "hdr": "723", "rax": "72B", "dbg": true, "cmd": {"22": "4800"}, "freq": 5,
+  "signals": [
+    {"id": "MX30_BAT_T_1", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Battery temperature 1"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "480D"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_HVBAT_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "mul": 10, "div": 1000, "unit": "volts" }, "name": "Battery pack voltage", "suggestedMetric": "tractionBatteryVoltage"}
+  ]},
+{ "hdr": "723", "rax": "72B", "dbg": true, "cmd": {"22": "D90B"}, "freq": 5,
+  "signals": [
+    {"id": "MX30_BAT_T_2", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Battery temperature 2"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "D90E"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_12V_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "volts" }, "name": "12V battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "D914"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_HV_EV_BATT_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "High voltage battery state of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DCE1"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_IG_ON_TIMER", "path": "Trips", "fmt": { "len": 16, "max": 1092.25, "div": 60, "unit": "minutes" }, "name": "Time since ignition on"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DCE2"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_12V_SOC_723", "path": "Battery", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "12V battery state of charge"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DD01"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_ODO_723", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Total distance", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DD05"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_AAT_723", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "F40D"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_VEHICLE_SPEED", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DD8B"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_MOTOR_TRQ_REQ", "path": "Engine", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "newtonMeters" }, "name": "Motor torque, requested"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DD8C"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_COOL_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "celsius" }, "name": "Motor coolant temperature"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DDAF"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_CAPACITOR_V", "path": "Battery", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "volts" }, "name": "Capacitor voltage"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DDB1"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_MOTOR_AAT", "path": "Engine", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "celsius" }, "name": "Motor ambient air temperature"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DDB3"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_IGBT_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "celsius" }, "name": "Insulated gate bipolar transistor temperature"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DDC3"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_MOTOR_RPM", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Motor RPM"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DDEF"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_MOTOR_IAT", "path": "Engine", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "celsius" }, "name": "Motor internal temperature"}
+  ]},
+{ "hdr": "725", "rax": "72D", "cmd": {"22": "DDF4"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_MOTOR_TRQ_EST", "path": "Engine", "fmt": { "len": 16, "max": 12757, "min": -350, "div": 5, "add": -350, "unit": "newtonMeters" }, "name": "Motor torque, estimated"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D922"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TP_FL", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front left pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D923"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TP_FR", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front right pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D924"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear left pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D925"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TP_RR", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear right pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D926"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TT_FL", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front left temperature", "suggestedMetric": "frontLeftTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D927"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TT_FR", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front right temperature", "suggestedMetric": "frontRightTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D928"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TT_RL", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear left temperature", "suggestedMetric": "rearLeftTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D929"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_TT_RR", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear right temperature", "suggestedMetric": "rearRightTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "dbg": true, "cmd": {"22": "DA05"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_BRAKE_SWITCH", "path": "Control", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "DD01"}, "freq": 30, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_ODO_CEM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "726", "rax": "72E", "dbg": true, "cmd": {"22": "DD06"}, "freq": 1,
+  "signals": [
+    {"id": "MX30_POWER_MODE", "path": "Engine", "fmt": { "len": 8, "max": 63, "min": -192, "add": -192, "unit": "scalar" }, "name": "Power mode"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B00"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_BRAKE_LIGHT_SWITCH", "path": "Lights", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Brake light switch"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "2B05"}, "freq": 1,
+  "signals": [
+    {"id": "MX30_DTSC_SWITCH", "path": "Engine", "fmt": { "len": 8, "max": 2.98, "min": -1, "div": 64, "add": -1, "unit": "scalar" }, "name": "Traction control switch indicator"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B06"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_FL_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B07"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_FR_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B08"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_RL_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B09"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_RR_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "2B0B"}, "freq": 1,
+  "signals": [
+    {"id": "MX30_YAW_RATE_SIG", "path": "Engine", "fmt": { "len": 16, "max": 6553, "min": -6553, "div": 5, "sign": true, "unit": "unknown" }, "name": "Yaw rate signal"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B0C"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_LATERAL_ANG", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "degrees" }, "name": "Lateral angle"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B0D"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_BRAKE_P", "path": "Control", "fmt": { "len": 16, "max": 65535, "nullmax": 65535, "unit": "scalar" }, "name": "Brake pressure, raw count"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B11"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_LAT_G_760", "path": "Movement", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Lateral acceleration, raw count"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "2B35"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_PEDAL_POS_SENS", "path": "Engine", "fmt": { "len": 16, "max": 2621, "div": 25, "unit": "millimeters" }, "name": "- pedal position sensor"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "3302"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_STEER_ANG_ACT", "path": "Engine", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "unknown" }, "name": "Steering angle, actual value"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "3987"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_ABS_WHL_SPD_1", "path": "Control", "fmt": {           "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Anti-lock brake wheel speed 1"},
+    {"id": "MX30_ABS_WHL_SPD_2", "path": "Control", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Anti-lock brake wheel speed 2"},
+    {"id": "MX30_ABS_WHL_SPD_3", "path": "Control", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Anti-lock brake wheel speed 3"},
+    {"id": "MX30_ABS_WHL_SPD_4", "path": "Control", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Anti-lock brake wheel speed 4"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "3A51"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_ABS_LATERAL_ACCEL", "path": "Control", "fmt": { "len": 16, "max": 1310.7, "div": 50, "unit": "gravity" }, "name": "Anti-lock brake lateral acceleration"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "DD05"}, "freq": 5,
+  "signals": [
+    {"id": "MX30_OUTDOOR_T_BCM", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Outdoor temperature, BCM"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "EE03"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_SAS_STEER_WHL_ANG",    "path": "Tires",    "fmt": {           "len": 16, "max": 1433,  "min": -1433, "div": 22.8533, "sign": true, "unit": "degrees"                }, "name": "Steering wheel angle sensor offset"},
+    {"id": "MX30_BRAKE_P_SENS_OFFSET",  "path": "Control",  "fmt": {"bix": 32, "len": 16, "max": 40.95,               "div": 1600,                  "unit": "bars"                   }, "name": "Brake pressure sensor offset"},
+    {"id": "MX30_LATERAL",              "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 0.579,               "div": 113000,                "unit": "metersPerSecondSquared" }, "name": "Lateral acceleration sensor offset"},
+    {"id": "MX30_YAW_RATE_SENS_OFFSET", "path": "Engine",   "fmt": {"bix": 64, "len": 16, "max": 18.72,               "div": 3500,                  "unit": "unknown"                }, "name": "Yaw rate sensor offset"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "EE04"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX30_SAS_STEER_WHL_ANG_SENS", "path": "Tires",    "fmt": {           "len": 16, "max": 22.42,  "min": -22.42, "div": 1461,    "sign": true, "unit": "degrees"                }, "name": "Steering wheel angle sensor stored offset"},
+    {"id": "MX30_LATERAL_ACCELEROMETER",  "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 0.0588,                "div": 1113000,               "unit": "metersPerSecondSquared" }, "name": "Lateral acceleration sensor stored offset"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "EE07"}, "freq": 5,
+  "signals": [
+    {"id": "MX30_FL_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {           "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Front left brake disc temperature, calculated"},
+    {"id": "MX30_FR_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {"bix": 8,  "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Front right brake disc temperature, calculated"},
+    {"id": "MX30_RL_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {"bix": 16, "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Rear left brake disc temperature, calculated"},
+    {"id": "MX30_RR_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {"bix": 24, "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Rear right brake disc temperature, calculated"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "FDC6"}, "freq": 15,
+  "signals": [
+    {"id": "MX30_ITPMS_LOW_SPD",  "path": "Movement", "fmt": {          "len": 8, "max": 255, "unit": "percent" }, "name": "Indirect tire pressure monitoring low speed calibration"},
+    {"id": "MX30_ITPMS_HIGH_SPD", "path": "Movement", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "percent" }, "name": "Indirect tire pressure monitoring high speed calibration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0202"}, "freq": 3600, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_DTC_CNTD", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of DTCs"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "032B"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_ACC_POS", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0393"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_AC_P", "path": "Climate", "fmt": { "len": 16, "max": 1000, "mul": 245251, "div": 845473, "unit": "psi" }, "name": "A/C compressor pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "03BA"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_AAT_V", "fmt": { "len": 16, "max": 5, "mul": 0.0048875855, "unit": "volts" }, "name": "Ambient air temperature sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "057D"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_AAT_ALT", "path": "Climate", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Ambient temperature, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0580"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_GRILL_SHUTTER_POS", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Grill shutter position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0707"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_GRILL_SHUTTER_OPEN", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Grill shutter open"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0914"}, "freq": 0.5, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_APP1_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "APP sensor 1 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0915"}, "freq": 0.5, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_APP2_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "APP sensor 2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "099B"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_AC_STATE", "path": "Climate", "fmt": { "len": 8, "max": 1, "unit": "offon" }, "name": "A/C compressor, state"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "9800"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_AC_P_SENS_V", "path": "Climate", "fmt": { "len": 16, "max": 5, "div": 1024, "sign": true, "unit": "volts" }, "name": "A/C compressor pressure sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "DD01"}, "freq": 30, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_MILEAGE_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40D"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F421"}, "freq": 3600, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_MIL_DIST", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with MIL"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F430"}, "freq": 3600, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_WARMUP_CLR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Warm-ups since DTC clear"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F431"}, "freq": 3600, "dbgfilter": { "to": 2021, "from": 2023 },
+  "signals": [
+    {"id": "MX30_DIST_DTC_CLR", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance since DTC clear", "suggestedMetric": "distanceSinceDTCsCleared"}
+  ]}
 ]
 }

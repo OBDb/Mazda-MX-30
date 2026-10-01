@@ -1,0 +1,11 @@
+command_id: 725.72D.22DDB3
+test_cases:
+- expected_values:
+    MX30_IGBT_TEMP: 13.75
+  response: 72D0562DDB3006E
+- expected_values:
+    MX30_IGBT_TEMP: 30.125
+  response: 72D0562DDB300F1
+- expected_values:
+    MX30_IGBT_TEMP: 33.125
+  response: 72D0562DDB30109

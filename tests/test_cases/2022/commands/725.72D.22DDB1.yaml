@@ -1,0 +1,11 @@
+command_id: 725.72D.22DDB1
+test_cases:
+- expected_values:
+    MX30_MOTOR_AAT: 10.125
+  response: 72D0562DDB10051
+- expected_values:
+    MX30_MOTOR_AAT: 31.875
+  response: 72D0562DDB100FF
+- expected_values:
+    MX30_MOTOR_AAT: 32
+  response: 72D0562DDB10100

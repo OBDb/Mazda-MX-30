@@ -1,0 +1,23 @@
+command_id: 723.72B.22DD05
+test_cases:
+- expected_values:
+    MX30_AAT_723: 5
+  response: 72B0462DD052D
+- expected_values:
+    MX30_AAT_723: 6
+  response: 72B0462DD052E
+- expected_values:
+    MX30_AAT_723: 8
+  response: 72B0462DD0530
+- expected_values:
+    MX30_AAT_723: 9
+  response: 72B0462DD0531
+- expected_values:
+    MX30_AAT_723: 10
+  response: 72B0462DD0532
+- expected_values:
+    MX30_AAT_723: 11
+  response: 72B0462DD0533
+- expected_values:
+    MX30_AAT_723: 12
+  response: 72B0462DD0534

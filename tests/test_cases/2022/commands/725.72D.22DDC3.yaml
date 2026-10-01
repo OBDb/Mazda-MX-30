@@ -1,0 +1,11 @@
+command_id: 725.72D.22DDC3
+test_cases:
+- expected_values:
+    MX30_MOTOR_RPM: 0
+  response: 72D0562DDC30000
+- expected_values:
+    MX30_MOTOR_RPM: -229
+  response: 72D0562DDC3FF1B
+- expected_values:
+    MX30_MOTOR_RPM: -1
+  response: 72D0562DDC3FFFF

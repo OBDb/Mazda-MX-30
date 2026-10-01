@@ -1,0 +1,14 @@
+command_id: 726.72E.22DD01
+test_cases:
+- expected_values:
+    MX30_ODO_CEM: 39918
+  response: 72E0662DD01009BEE
+- expected_values:
+    MX30_ODO_CEM: 39922
+  response: 72E0662DD01009BF2
+- expected_values:
+    MX30_ODO_CEM: 39939
+  response: 72E0662DD01009C03
+- expected_values:
+    MX30_ODO_CEM: 40232
+  response: 72E0662DD01009D28

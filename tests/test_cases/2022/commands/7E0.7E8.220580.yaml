@@ -1,0 +1,29 @@
+command_id: 7E0.7E8.220580
+test_cases:
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 0
+  response: '7E80462058000'
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 3.92157
+  response: 7E8046205800A
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 14.11765
+  response: '7E80462058024'
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 65.88235
+  response: 7E804620580A8
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 69.80392
+  response: 7E804620580B2
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 70.98039
+  response: 7E804620580B5
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 74.90196
+  response: 7E804620580BF
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 94.11765
+  response: 7E804620580F0
+- expected_values:
+    MX30_GRILL_SHUTTER_POS: 100
+  response: 7E804620580FF

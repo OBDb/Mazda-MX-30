@@ -1,0 +1,11 @@
+command_id: 725.72D.22DD8B
+test_cases:
+- expected_values:
+    MX30_MOTOR_TRQ_REQ: 0
+  response: 72D0562DD8B0000
+- expected_values:
+    MX30_MOTOR_TRQ_REQ: -27.375
+  response: 72D0562DD8BFF25
+- expected_values:
+    MX30_MOTOR_TRQ_REQ: -0.375
+  response: 72D0562DD8BFFFD

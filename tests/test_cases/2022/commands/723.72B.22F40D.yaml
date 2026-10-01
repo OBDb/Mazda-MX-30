@@ -1,0 +1,8 @@
+command_id: 723.72B.22F40D
+test_cases:
+- expected_values:
+    MX30_VEHICLE_SPEED: 0
+  response: 72B0462F40D00
+- expected_values:
+    MX30_VEHICLE_SPEED: 72
+  response: 72B0462F40D48

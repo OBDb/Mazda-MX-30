@@ -1,0 +1,32 @@
+command_id: 726.72E.22D926
+test_cases:
+- expected_values:
+    MX30_TT_FL: 4
+  response: 72E0462D92636
+- expected_values:
+    MX30_TT_FL: 7
+  response: 72E0462D92639
+- expected_values:
+    MX30_TT_FL: 8
+  response: 72E0462D9263A
+- expected_values:
+    MX30_TT_FL: 9
+  response: 72E0462D9263B
+- expected_values:
+    MX30_TT_FL: 11
+  response: 72E0462D9263D
+- expected_values:
+    MX30_TT_FL: 15
+  response: 72E0462D92641
+- expected_values:
+    MX30_TT_FL: 16
+  response: 72E0462D92642
+- expected_values:
+    MX30_TT_FL: 17
+  response: 72E0462D92643
+- expected_values:
+    MX30_TT_FL: 18
+  response: 72E0462D92644
+- expected_values:
+    MX30_TT_FL: 19
+  response: 72E0462D92645

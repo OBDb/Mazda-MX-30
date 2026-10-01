@@ -1,0 +1,8 @@
+command_id: 725.72D.22DD8C
+test_cases:
+- expected_values:
+    MX30_COOL_TEMP: 8
+  response: 72D0562DD8C0008
+- expected_values:
+    MX30_COOL_TEMP: 19
+  response: 72D0562DD8C0013

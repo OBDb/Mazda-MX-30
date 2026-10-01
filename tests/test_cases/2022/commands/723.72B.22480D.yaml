@@ -1,0 +1,14 @@
+command_id: 723.72B.22480D
+test_cases:
+- expected_values:
+    MX30_HVBAT_VOLTAGE: 353.37
+  response: 72B0562480D8A09
+- expected_values:
+    MX30_HVBAT_VOLTAGE: 355.87
+  response: 72B0562480D8B03
+- expected_values:
+    MX30_HVBAT_VOLTAGE: 358.36
+  response: 72B0562480D8BFC
+- expected_values:
+    MX30_HVBAT_VOLTAGE: 385.24
+  response: 72B0562480D967C
