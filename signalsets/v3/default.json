@@ -121,35 +121,35 @@
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D922"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TP_FL", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front left pressure", "suggestedMetric": "frontLeftTirePressure"}
+    {"id": "MX30_TP_FL", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "nullmax": 50.8, "unit": "psi" }, "name": "Front left pressure", "suggestedMetric": "frontLeftTirePressure"}
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D923"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TP_FR", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front right pressure", "suggestedMetric": "frontRightTirePressure"}
+    {"id": "MX30_TP_FR", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "nullmax": 50.8, "unit": "psi" }, "name": "Front right pressure", "suggestedMetric": "frontRightTirePressure"}
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D924"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear left pressure", "suggestedMetric": "rearLeftTirePressure"}
+    {"id": "MX30_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "nullmax": 50.8, "unit": "psi" }, "name": "Rear left pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D925"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TP_RR", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear right pressure", "suggestedMetric": "rearRightTirePressure"}
+    {"id": "MX30_TP_RR", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "nullmax": 50.8, "unit": "psi" }, "name": "Rear right pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D926"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TT_FL", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front left temperature", "suggestedMetric": "frontLeftTireTemperature"}
+    {"id": "MX30_TT_FL", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "nullmax": 204, "unit": "celsius" }, "name": "Front left temperature", "suggestedMetric": "frontLeftTireTemperature"}
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D927"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TT_FR", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front right temperature", "suggestedMetric": "frontRightTireTemperature"}
+    {"id": "MX30_TT_FR", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "nullmax": 204, "unit": "celsius" }, "name": "Front right temperature", "suggestedMetric": "frontRightTireTemperature"}
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D928"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TT_RL", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear left temperature", "suggestedMetric": "rearLeftTireTemperature"}
+    {"id": "MX30_TT_RL", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "nullmax": 204, "unit": "celsius" }, "name": "Rear left temperature", "suggestedMetric": "rearLeftTireTemperature"}
   ]},
 { "hdr": "726", "rax": "72E", "cmd": {"22": "D929"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "MX30_TT_RR", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear right temperature", "suggestedMetric": "rearRightTireTemperature"}
+    {"id": "MX30_TT_RR", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "nullmax": 204, "unit": "celsius" }, "name": "Rear right temperature", "suggestedMetric": "rearRightTireTemperature"}
   ]},
 { "hdr": "726", "rax": "72E", "dbg": true, "cmd": {"22": "DA05"}, "freq": 0.25,
   "signals": [
